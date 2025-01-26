@@ -372,8 +372,8 @@ const transporter = nodemailer.createTransport({
   port: 587,          // or 465 for secure
   secure: false,      // true for 465, false for other ports
   auth: {
-    user: process.env.AUTH_EMAIL,
-    pass: process.env.AUTH_PASS,
+    user: "mouhamedaminkraiem09@gmail.com",
+    pass: "4aBMUyAHQPtWGRLj",
   },
 });
 
@@ -2210,15 +2210,15 @@ app.post('/sendmail', async (req, res) => {
       let transporter = nodemailer.createTransport({
           service: 'gmail',
           auth: {
-              user: process.env.AUTH2_EMAIL,
-              pass: process.env.AUTH2_PASSWORD,
+              user: "mouhamedaminkraiem08@gmail.com",
+              pass: "hpzr tlho zloe cslx",
           },
       });
 
       // Setup email data
       let mailOptions = {
-          from: `"Animo App" <${process.env.AUTH_EMAIL}>`, // sender address
-          to: process.env.AUTH_EMAIL, // receiver (your email)
+          from: `"Animo App" <${"mouhamedaminkraiem09@gmail.com"}>`, // sender address
+          to: "mouhamedaminkraiem09@gmail.com", // receiver (your email)
           subject: 'New Bug Report from Animo App',
           text: message,
           // You can also use HTML:
