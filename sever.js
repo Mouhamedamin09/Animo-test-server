@@ -538,6 +538,7 @@ app.post('/register', async (req, res) => {
       email,
       password: hashedPassword,
       isVerified: false,
+      verificationCode: '',
     });
 
     // Generate a verification code
